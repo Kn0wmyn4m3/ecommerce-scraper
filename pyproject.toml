@@ -1,0 +1,15 @@
+[project]
+name = "ecommerce-product-scraper"
+version = "1.0.0"
+description = "Polite, robust e-commerce product scraper with CSV/JSON/Excel export."
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["requests>=2.31", "beautifulsoup4>=4.12", "openpyxl>=3.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

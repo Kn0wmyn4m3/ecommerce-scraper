@@ -1,0 +1,19 @@
+{
+  "slug": "ecommerce-scraper",
+  "title": "E-commerce Product Scraper",
+  "tagline": "Resilient, polite Python web scraper with robots.txt compliance, concurrent workers, resume support, and CSV/JSON/Excel exports.",
+  "category": "Data & Scraping",
+  "tech_stack": ["Python", "requests", "BeautifulSoup4", "openpyxl", "pytest"],
+  "highlights": [
+    "Respects robots.txt with configurable rate limiting, exponential backoff, and custom User-Agent",
+    "Concurrent ThreadPoolExecutor crawling with --resume support to skip already-scraped URLs",
+    "Exports clean CSV, JSON, or styled Excel (.xlsx) workbooks; verified by 59 offline pytest tests"
+  ],
+  "repo_url": "https://github.com/Kn0wmyn4m3/ecommerce-scraper",
+  "live_demo_url": null,
+  "sample_outputs": ["examples/sample_books.xlsx", "examples/sample_books.csv"],
+  "run_command": "python3 -m scraper --category travel --format xlsx --output examples/sample_books.xlsx",
+  "test_command": "python3 -m pytest -q",
+  "test_summary": "59 passed",
+  "status": "verified"
+}
